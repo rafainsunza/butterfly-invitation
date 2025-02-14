@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body,html{height:100%;background-color:#fef8e4;font-family:"Italianno",serif;font-style:normal;color:#da9fa2}body{display:flex;justify-content:center;align-items:center}.heading-top,.heading-bottom{position:fixed;font-size:80px;width:100%;text-align:center}.heading-top{top:20%}.heading-bottom{bottom:20%}.wrapper{height:200px;width:300px;background-color:#d2b2af;position:relative;display:flex;justify-content:center;z-index:0}.wrapper.open .lid-closed{transform:rotateX(90deg);transition-delay:0s}.wrapper.open .lid-open{transform:rotateX(180deg);transition-delay:.25s}.wrapper.open .letter{transform:translateY(-125px) scale(1);transition:transform 1s ease;transition-delay:.5s;background-color:#fbf1e9}.wrapper.open.expand .letter{position:fixed;top:0;width:100%;height:100%;transform:translateY(0);transition:transform 0s,height .7s,width .7s;z-index:9999}.wrapper.open .open-btn{display:none}.lid{position:absolute;height:100%;width:100%;top:0;left:0;border-right:150px solid rgba(0,0,0,0);border-bottom:100px solid rgba(0,0,0,0);border-left:150px solid rgba(0,0,0,0);transform-origin:top;transition:transform .25s linear}.lid-closed{border-top:100px solid #fab5c2;transform:rotateX(0deg);z-index:3;transition-delay:.75s}.lid-open{border-top:100px solid #fab5c2;transform:rotateX(90deg);z-index:1;transition-delay:.5s}.envelope{position:absolute;height:100%;width:100%;top:0;left:0;border-top:101px solid rgba(0,0,0,0);border-right:150px solid #fab5c2;border-bottom:100px solid #fab5c2;border-left:150px solid #fab5c2;z-index:3}.letter{position:absolute;top:0;width:85%;max-width:480px;height:100%;background-color:#fff;z-index:2;transition:.5s}.letter-seal{width:50px;height:50px;background-color:rgba(0,0,0,0);border-radius:100%}.letter-inner,.letter-inner-back{position:absolute;width:100%;height:100%;display:flex;flex-direction:column;overflow:hidden;backface-visibility:hidden;background-color:#fbf1e9}.letter-inner-back{transform:rotateY(180deg) translateZ(1px)}.letter-frame{position:absolute;top:0;left:0;height:100%;width:100%}.letter-text-container{height:100%;display:flex;align-items:center;z-index:1;padding:15px 15px 0 15px}@media(min-width: 480px){.letter-text-container{padding:15px 30px}}.letter-text-front{font-size:36px;text-align:center;letter-spacing:1.5px;color:#715257}.letter-text-back{position:relative;font-size:30px;text-align:center;letter-spacing:1.5px;color:#715257;height:100%;display:flex;flex-direction:column;justify-content:space-between}.letter-text-back-middle{width:75%;margin:0 auto}.letter-text-back-bottom{max-width:50%;margin:0 0 0 auto}.open-btn{height:45px;width:45px;position:absolute;bottom:45%;background-color:rgba(0,0,0,0);border:none;padding:0;display:flex;justify-content:center;align-items:center;border-radius:100%;z-index:9999}.open-btn:hover{cursor:pointer}.illustration-container-top,.illustration-container-bottom{width:100%}.illustration-container-top{transform:rotate(180deg)}.illustration-container-bottom{margin-top:auto}.illustration-top,.illustration-bottom{width:100%;height:100%;object-fit:cover}.illustration-container-initial{position:fixed;top:0;width:100%;max-height:240px;opacity:.7}.illustration-container-initial-bottom{position:fixed;bottom:0;width:100%;max-height:240px;transform:rotate(180deg);opacity:.7}.illustration-initial,.illustration-initial-bottom{max-height:240px;width:100%}.flip-card{perspective:1000px;width:100%;height:100%}.flip-card-inner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .6s ease}.flip-card-inner.flipped{transform:rotateY(180deg)}.flip-card-btn,.flip-card-btn-back{width:max-content;margin:0 15px 0 auto;background-color:rgba(0,0,0,0);border:none;cursor:pointer;display:flex;justify-content:center;align-items:center;gap:20px;font-family:"Italianno",serif;font-size:30px;color:#715257;padding:0}.flip-card-btn-back,.flip-card-btn-back-back{flex-direction:row-reverse;margin:0 auto 0 15px}@media(min-width: 480px){.flip-card-btn-back,.flip-card-btn-back-back{margin:0 auto 0 30px}}@media(min-width: 480px){.flip-card-btn,.flip-card-btn-back{margin:0 30px 0 auto}}@keyframes flutter{from{transform:rotateX(0)}to{transform:rotateX(80deg)}}.butterfly{background:none;color:#b47486}.butterfly-container{width:max-content}.butterfly__wing{transform-origin:center center;animation:flutter 150ms alternate infinite}.butterfly-back{color:#b47486;transform:rotateY(180deg)}path{fill:currentcolor}@keyframes pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(1.2);opacity:.7}100%{transform:scale(1);opacity:1}}.pulsating{animation:pulse 1.5s ease-in-out infinite}.hidden{display:none}a{color:inherit}@keyframes fly-around{0%{transform:translate(0vw, 0vh)}20%{transform:translate(30vw, -20vh) rotate(15deg)}40%{transform:translate(60vw, 10vh) rotate(-10deg)}60%{transform:translate(100vw, -15vh) rotate(20deg)}80%{transform:translate(50vw, 30vh) rotate(-15deg)}100%{transform:translate(0vw, 0vh)}}.butterfly-container-flying{position:fixed;top:50%;left:0;z-index:99999999;width:max-content;animation:fly-around 8s ease-in-out infinite}.sound-on{position:fixed;bottom:17%;left:50%;transform:translate(-50%);font-size:40px;text-decoration:underline}
